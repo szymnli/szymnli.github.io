@@ -1,0 +1,552 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Szymon Linda — Cybersecurity</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,400;0,600;1,400&family=Syne:wght@400;700;800&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <nav>
+            <div class="nav-logo">SL<span>_</span></div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+
+        <!-- HERO -->
+        <section id="hero">
+            <div class="hero-grid-bg"></div>
+            <div class="hero-glow"></div>
+            <div class="hero-content">
+                <div class="hero-tag">Cybersecurity Student & Developer</div>
+                <h1 class="hero-name">
+                    Szymon<br /><span class="accent">Linda</span
+                    ><span class="cursor"></span>
+                </h1>
+                <p class="hero-bio">
+                    2nd-year <strong>Cybersecurity student</strong> at Wrocław
+                    University of Science and Technology. I build security
+                    tools: network monitors, system daemons, shells in C.
+                    Currently working an IAM internship at Schaeffler while
+                    finishing <strong>Lynx</strong>, a Linux HIDS daemon I'm
+                    writing from scratch.
+                </p>
+                <div class="hero-links">
+                    <a
+                        class="btn btn-primary"
+                        href="https://github.com/szymnli"
+                        target="_blank"
+                        rel="noopener"
+                    >
+                        <svg
+                            width="14"
+                            height="14"
+                            viewBox="0 0 24 24"
+                            fill="currentColor"
+                        >
+                            <path
+                                d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"
+                            />
+                        </svg>
+                        GitHub
+                    </a>
+                    <a
+                        class="btn btn-outline"
+                        href="https://www.linkedin.com/in/szymon-linda-279735296"
+                        target="_blank"
+                        rel="noopener"
+                    >
+                        <svg
+                            width="14"
+                            height="14"
+                            viewBox="0 0 24 24"
+                            fill="currentColor"
+                        >
+                            <path
+                                d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"
+                            />
+                        </svg>
+                        LinkedIn
+                    </a>
+                    <a class="btn btn-outline" href="#projects">
+                        View Projects ↓
+                    </a>
+                </div>
+            </div>
+            <div class="hero-status">
+                <span class="status-dot"></span>
+                Open to junior roles &amp; internships
+            </div>
+        </section>
+
+        <!-- ABOUT -->
+        <section id="about">
+            <div class="container">
+                <div class="section-label">01 // About</div>
+                <h2 class="section-title">Who I Am</h2>
+                <div class="about-grid reveal">
+                    <div class="about-text">
+                        <p>
+                            I study cybersecurity engineering at Wrocław
+                            University of Science and Technology. The program
+                            covers the usual suspects: network security, OS
+                            internals, PKI, forensics, cryptography. It's decent
+                            on theory; I try to make up the gap on the practical
+                            side.
+                        </p>
+                        <p>
+                            Most of what I've learned about security came from
+                            building things and breaking them in VMs. Writing a
+                            Unix shell in C teaches you more about process
+                            management than any lecture. Same with building a
+                            NIDS — you start caring a lot more about TCP flags.
+                        </p>
+                        <p>
+                            I run an
+                            <span class="highlight">Arch-based Linux</span>
+                            daily, use QEMU/KVM for lab work, and have a Windows
+                            dual-boot for when I need it. My current focus is
+                            IAM at Schaeffler during the day and
+                            <span class="highlight">Lynx</span> (a HIDS daemon)
+                            in the evenings.
+                        </p>
+                    </div>
+                    <div class="about-stats">
+                        <div class="stat-box">
+                            <span class="stat-num">6</span>
+                            <span class="stat-label">Public Projects</span>
+                        </div>
+                        <div class="stat-box">
+                            <span class="stat-num">2nd</span>
+                            <span class="stat-label">Year at PWr CBE</span>
+                        </div>
+                        <div class="stat-box">
+                            <span class="stat-num">3+</span>
+                            <span class="stat-label">Languages Used</span>
+                        </div>
+                        <div class="stat-box">
+                            <span class="stat-num">3yr</span>
+                            <span class="stat-label">Industry Experience</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SKILLS -->
+        <section id="skills">
+            <div class="container">
+                <div class="section-label">02 // Skills</div>
+                <h2 class="section-title">Technical Stack</h2>
+                <div class="skills-grid reveal">
+                    <div class="skill-category">
+                        <div class="skill-category-title">// Security</div>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Network Analysis</span>
+                            <span class="skill-tag">NIDS / HIDS</span>
+                            <span class="skill-tag">Digital Forensics</span>
+                            <span class="skill-tag">Volatility 3</span>
+                            <span class="skill-tag">Wireshark</span>
+                            <span class="skill-tag">Nmap</span>
+                            <span class="skill-tag">PKI / OpenSSL</span>
+                            <span class="skill-tag">Password Cracking</span>
+                            <span class="skill-tag">Log Analysis</span>
+                            <span class="skill-tag">Active Directory</span>
+                            <span class="skill-tag">Entra ID</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <div class="skill-category-title">// Programming</div>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Python</span>
+                            <span class="skill-tag">C</span>
+                            <span class="skill-tag">Bash / Shell</span>
+                            <span class="skill-tag">Scapy</span>
+                            <span class="skill-tag">inotify</span>
+                            <span class="skill-tag">YAML / JSON</span>
+                            <span class="skill-tag">Git</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <div class="skill-category-title">
+                            // Systems & Networking
+                        </div>
+                        <div class="skill-tags">
+                            <span class="skill-tag"
+                                >Linux (Arch / Kali / Debian)</span
+                            >
+                            <span class="skill-tag">QEMU / KVM</span>
+                            <span class="skill-tag">OSPFv2 / RIPv2</span>
+                            <span class="skill-tag">Cisco Packet Tracer</span>
+                            <span class="skill-tag">TCP/IP</span>
+                            <span class="skill-tag">Btrfs</span>
+                            <span class="skill-tag">Windows Forensics</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <div class="skill-category-title">// IAM & IT Ops</div>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Identity Governance</span>
+                            <span class="skill-tag">Access Management</span>
+                            <span class="skill-tag">Incident Handling</span>
+                            <span class="skill-tag">ITSM / Service Desk</span>
+                            <span class="skill-tag">FTK Imager</span>
+                            <span class="skill-tag">John the Ripper</span>
+                            <span class="skill-tag">Hashcat</span>
+                            <span class="skill-tag">VeraCrypt</span>
+                            <span class="skill-tag">GPG</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- EXPERIENCE -->
+        <section id="experience">
+            <div class="container">
+                <div class="section-label">03 // Experience</div>
+                <h2 class="section-title">Work History</h2>
+                <div class="timeline reveal">
+                    <div class="timeline-item">
+                        <div class="timeline-date">
+                            Mar 2026 — Present · Wrocław, Poland (Hybrid)
+                        </div>
+                        <div class="timeline-role">
+                            Identity Governance &amp; Administration
+                        </div>
+                        <div class="timeline-org">Schaeffler</div>
+                        <div class="timeline-desc">
+                            Working on IAM incidents and service requests — user
+                            accounts, access rights, identity system issues.
+                            Day-to-day involves monitoring and maintaining
+                            Active Directory and Entra ID, handling requests
+                            that come in, and making sure things don't quietly
+                            break. Also involved in process documentation and
+                            working with other IT teams on access compliance.
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-date">
+                            Oct 2022 — Mar 2026 · 3 yrs 5 mos · Kraków, Poland
+                            (Hybrid)
+                        </div>
+                        <div class="timeline-role">IT Service Desk</div>
+                        <div class="timeline-org">International Paper</div>
+                        <div class="timeline-desc">
+                            First real IT job. Monitored the service desk and
+                            Digital Command Center, triaged incidents, and did
+                            first-line support for users across multiple
+                            countries. Learned to prioritize fast, escalate
+                            correctly, and stay calm when five things broke at
+                            once. Worked with both internal teams and external
+                            providers to get services back up.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PROJECTS -->
+        <section id="projects">
+            <div class="container">
+                <div class="section-label">04 // Projects</div>
+                <h2 class="section-title">What I've Built</h2>
+                <div class="projects-grid reveal">
+                    <!-- Lynx -->
+                    <div class="project-card">
+                        <div class="project-lang lang-python">Python</div>
+                        <div class="project-name">Lynx</div>
+                        <p class="project-desc">
+                            A Linux HIDS daemon that watches the filesystem and
+                            running processes in real time. Built without AI
+                            assistance — the point was to actually understand
+                            inotify and process monitoring.
+                        </p>
+                        <ul class="project-features">
+                            <li>inotify-based filesystem event monitoring</li>
+                            <li>
+                                SHA-256 integrity checking against a saved
+                                baseline
+                            </li>
+                            <li>
+                                Process monitoring — flags new root processes
+                                and deleted binaries
+                            </li>
+                            <li>SUID binary tracking</li>
+                            <li>Structured JSON logging, YAML config</li>
+                        </ul>
+                        <div class="project-footer">
+                            <span class="project-badge badge-active"
+                                >Active Dev</span
+                            >
+                            <a
+                                class="project-link"
+                                href="https://github.com/szymnli/Lynx"
+                                target="_blank"
+                                rel="noopener"
+                            >
+                                github.com ↗
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- NIDS -->
+                    <div class="project-card">
+                        <div class="project-lang lang-python">Python</div>
+                        <div class="project-name">
+                            Network Intrusion Detection System
+                        </div>
+                        <p class="project-desc">
+                            Live packet capture tool that detects port scans,
+                            SYN floods, ICMP sweeps, and DNS queries to known
+                            malicious domains. Pulls threat intel from Abuse.ch
+                            URLhaus on startup.
+                        </p>
+                        <ul class="project-features">
+                            <li>Port scan, SYN flood, ICMP sweep detection</li>
+                            <li>
+                                DNS blocklist via Abuse.ch URLhaus (live feed)
+                            </li>
+                            <li>Rich terminal UI, Pandas CSV logging</li>
+                            <li>Built with Scapy on Linux</li>
+                        </ul>
+                        <div class="project-footer">
+                            <span class="project-badge badge-complete"
+                                >Complete</span
+                            >
+                            <a
+                                class="project-link"
+                                href="https://github.com/szymnli/Network-Intrusion-Detection-System"
+                                target="_blank"
+                                rel="noopener"
+                            >
+                                github.com ↗
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- szsh -->
+                    <div class="project-card">
+                        <div class="project-lang lang-c">C</div>
+                        <div class="project-name">szsh</div>
+                        <p class="project-desc">
+                            A Unix shell written in C. Mostly an exercise in
+                            understanding what actually happens when you type a
+                            command — fork, exec, wait, and all the plumbing
+                            between them.
+                        </p>
+                        <ul class="project-features">
+                            <li>Command parsing and execution</li>
+                            <li>fork/exec process model</li>
+                            <li>Built-in commands, I/O handling</li>
+                        </ul>
+                        <div class="project-footer">
+                            <span class="project-badge badge-complete"
+                                >Complete</span
+                            >
+                            <a
+                                class="project-link"
+                                href="https://github.com/szymnli/szsh"
+                                target="_blank"
+                                rel="noopener"
+                            >
+                                github.com ↗
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- syshealth -->
+                    <div class="project-card">
+                        <div class="project-lang lang-shell">Shell</div>
+                        <div class="project-name">syshealth</div>
+                        <p class="project-desc">
+                            Bash utility for checking system health at a glance.
+                            CPU, memory, disk, network — plus threshold alerts
+                            when something looks off.
+                        </p>
+                        <ul class="project-features">
+                            <li>CPU, memory, disk, and network metrics</li>
+                            <li>Threshold-based alerting</li>
+                            <li>Clean terminal output</li>
+                        </ul>
+                        <div class="project-footer">
+                            <span class="project-badge badge-complete"
+                                >Complete</span
+                            >
+                            <a
+                                class="project-link"
+                                href="https://github.com/szymnli/syshealth"
+                                target="_blank"
+                                rel="noopener"
+                            >
+                                github.com ↗
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- dotfiles -->
+                    <div class="project-card">
+                        <div class="project-lang lang-shell">Shell</div>
+                        <div class="project-name">dotfiles</div>
+                        <p class="project-desc">
+                            My personal config files with a Bash deployment
+                            manager. Catppuccin Mocha theme across Kitty and
+                            Neovim. More time goes into this than I'd like to
+                            admit.
+                        </p>
+                        <ul class="project-features">
+                            <li>Neovim setup with lazy.nvim</li>
+                            <li>Automated deployment script</li>
+                        </ul>
+                        <div class="project-footer">
+                            <span class="project-badge badge-active"
+                                >Maintained</span
+                            >
+                            <a
+                                class="project-link"
+                                href="https://github.com/szymnli/dotfiles"
+                                target="_blank"
+                                rel="noopener"
+                            >
+                                github.com ↗
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- password-manager -->
+                    <div class="project-card">
+                        <div class="project-lang lang-python">Python</div>
+                        <div class="project-name">password-manager</div>
+                        <p class="project-desc">
+                            Simple CLI password manager in Python. Encrypted
+                            storage, key derivation, basic CRUD. Good exercise
+                            in applying crypto primitives to something that
+                            actually has to work.
+                        </p>
+                        <ul class="project-features">
+                            <li>Encrypted credential storage</li>
+                            <li>CLI interface for CRUD operations</li>
+                            <li>Secure key derivation</li>
+                        </ul>
+                        <div class="project-footer">
+                            <span class="project-badge badge-complete"
+                                >Complete</span
+                            >
+                            <a
+                                class="project-link"
+                                href="https://github.com/szymnli/password-manager"
+                                target="_blank"
+                                rel="noopener"
+                            >
+                                github.com ↗
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- EDUCATION -->
+        <section id="education">
+            <div class="container">
+                <div class="section-label">05 // Education</div>
+                <h2 class="section-title">Education</h2>
+                <div class="timeline reveal">
+                    <div class="timeline-item">
+                        <div class="timeline-date">
+                            2023 — Present · Wrocław, Poland
+                        </div>
+                        <div class="timeline-role">
+                            B.Eng. Cybersecurity (CBE)
+                        </div>
+                        <div class="timeline-org">
+                            Wrocław University of Science and Technology
+                        </div>
+                        <div class="timeline-desc">
+                            Covers network security, OS security, PKI, digital
+                            forensics, and cryptography. A lot of lab work: Kali
+                            Linux, Wireshark, Volatility 3, Cisco Packet Tracer.
+                            The forensics and OS security courses have been the
+                            most useful so far.
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-date">Notable Labs</div>
+                        <div class="timeline-role">
+                            Security Coursework Highlights
+                        </div>
+                        <div class="timeline-org">
+                            Wrocław University of Science and Technology
+                        </div>
+                        <div class="timeline-desc">
+                            Memory analysis with Volatility 3 (NTLM hash
+                            extraction, privilege escalation investigation) ·
+                            PKI lab — built a local CA and signed personal certs
+                            with OpenSSL · Disk image acquisition with FTK
+                            Imager and ewfmount · Password cracking with John
+                            the Ripper and Hashcat · OSPFv2 and RIPv2 routing
+                            labs in Packet Tracer · Windows Security event log
+                            analysis
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT -->
+        <section id="contact">
+            <div class="container">
+                <div class="section-label" style="justify-content: center">
+                    06 // Contact
+                </div>
+                <h2 class="section-title" style="margin-bottom: 1rem">
+                    Get in Touch
+                </h2>
+                <p class="contact-subtitle">
+                    I'm looking for junior roles and internships in
+                    cybersecurity — SOC, incident response, or security
+                    engineering. Also open to collaborating on security tooling
+                    or open source projects.
+                </p>
+                <div class="contact-links">
+                    <a
+                        class="btn btn-primary"
+                        href="https://www.linkedin.com/in/szymon-linda-279735296"
+                        target="_blank"
+                        rel="noopener"
+                    >
+                        LinkedIn ↗
+                    </a>
+                    <a
+                        class="btn btn-outline"
+                        href="https://github.com/szymnli"
+                        target="_blank"
+                        rel="noopener"
+                    >
+                        GitHub ↗
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <span>Szymon Linda — 2026</span>
+            <span>HTML / CSS / JS · GitHub Pages</span>
+        </footer>
+
+        <script src="index.js"></script>
+    </body>
+</html>
