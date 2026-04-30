@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Syne:wght@800');
+      .sl { font-family: "Syne", sans-serif; font-weight: 800; font-size: 14px; }
+    </style>
+  </defs>
+  <rect width="32" height="32" rx="3" fill="#f4f5f7"/>
+  <text class="sl" x="2" y="14" fill="#111518">SL</text>
+  <text class="sl" x="2" y="28" fill="#0058ff">_</text>
+</svg>
