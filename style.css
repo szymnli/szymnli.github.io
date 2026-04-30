@@ -145,14 +145,15 @@ nav {
     justify-content: space-between;
 }
 
-.nav-logo {
+.nav-logo a {
     font-family: var(--font-display);
     font-weight: 800;
     font-size: 1rem;
     color: var(--color-white);
     letter-spacing: 0.05em;
+    text-decoration: none;
 }
-.nav-logo span {
+.nav-logo a span {
     color: var(--color-accent);
 }
 
@@ -171,6 +172,10 @@ nav {
 }
 .nav-links a:hover {
     color: var(--color-accent);
+}
+
+#hero-link {
+    text-decoration: none;
 }
 
 /* ============================================================
